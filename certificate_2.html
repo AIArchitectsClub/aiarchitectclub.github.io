@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architect Club - Certificate</title>
+    
+    <!-- Open Graph meta tags for LinkedIn sharing -->
+    <meta property="og:title" content="AI Architect Certification Achievement - Belal Ali" />
+    <meta property="og:description" content="🚀 Just earned my AI Architect Certification from AI Architect Club! Thrilled to have mastered advanced Gen AI architecture, and strategic AI implementation." />
+    <meta property="og:image" content="../Belal Ali.jpg" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Architect Certification Achievement - Belal Ali" />
+    <meta name="twitter:description" content="🚀 Just earned my AI Architect Certification from AI Architect Club!" />
+    <meta name="twitter:image" content="../Belal Ali.jpg" />
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .certificate-container { background: white; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); padding: 40px; max-width: 900px; width: 100%; text-align: center; position: relative; overflow: hidden; }
+        .certificate-container::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, #667eea, #764ba2, #667eea); }
+        .header { margin-bottom: 30px; }
+        .header h1 { color: #667eea; font-size: 2.5em; margin-bottom: 10px; font-weight: bold; }
+        .header p { color: #666; font-size: 1.1em; font-style: italic; }
+        .certificate-image { margin: 30px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); }
+        .certificate-image img { width: 100%; height: auto; display: block; }
+        .recipient-name { color: #333; font-size: 2em; margin: 25px 0; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+        .actions { display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
+        .btn { padding: 12px 30px; border: none; border-radius: 25px; font-size: 1em; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; font-weight: 600; }
+        .btn-download { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .btn-download:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4); }
+        .btn-linkedin { background: #0077b5; color: white; }
+        .btn-linkedin:hover { background: #005885; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4); }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #f0f0f0; }
+        .footer p { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+        .footer a { color: #667eea; text-decoration: none; font-weight: 600; }
+        .footer a:hover { text-decoration: underline; }
+        .icon { width: 18px; height: 18px; fill: currentColor; }
+        @media (max-width: 768px) { .certificate-container { padding: 20px; margin: 10px; } .header h1 { font-size: 2em; } .recipient-name { font-size: 1.5em; letter-spacing: 1px; } .actions { flex-direction: column; align-items: center; } .btn { min-width: 200px; justify-content: center; } }
+        @media print { body { background: white; padding: 0; } .certificate-container { box-shadow: none; border: 2px solid #667eea; } .actions { display: none; } }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="header">
+            <h1>AI Architect Club</h1>
+            <p>Professional Development Certificate</p>
+        </div>
+        <div class="certificate-image">
+            <img src="../Belal Ali.jpg" alt="Certificate for Belal Ali" id="certificateImg">
+        </div>
+        <div class="recipient-name" id="recipientName">Belal Ali</div>
+        <div class="actions">
+            <button class="btn btn-download" onclick="downloadCertificate()">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Download Certificate
+            </button>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=AI_Architect_Club_Certificate" class="btn btn-linkedin" target="_blank" onclick="shareOnLinkedIn()">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                Share on LinkedIn
+            </a>
+        </div>
+        <div class="footer">
+            <p>This certificate was issued by AI Architect Club</p>
+            <p>Visit us at: <a href="https://www.linkedin.com/in/ai-architect-club" target="_blank">linkedin.com/in/ai-architect-club</a></p>
+            <p style="font-size: 0.8em; color: #999; margin-top: 15px;">Certificate ID: AAC-2025-001 | Issued: June 2025</p>
+        </div>
+    </div>
+    <script>
+        function downloadCertificate() {
+            const link = document.createElement('a');
+            link.href = '../Belal Ali.jpg';
+            link.download = 'Belal_Ali_Certificate.jpg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        function shareOnLinkedIn() {
+            const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank', 'width=600,height=400');
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.certificate-container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                container.style.transition = 'all 0.6s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+            const certImg = document.getElementById('certificateImg');
+            certImg.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            certImg.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                if (e.key === 's') {
+                    e.preventDefault();
+                    downloadCertificate();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
