@@ -9,9 +9,12 @@
     <meta property="og:description" content="MIT Certified Instructor Led Program with hands-on GenAI applications">
     <meta property="og:type" content="website">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        * {
+        :root {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,7 +22,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
             min-height: 100vh;
             color: #333;
         }
@@ -33,7 +37,7 @@
         /* Header */
         .header {
             background: rgba(30, 58, 138, 0.95);
-            backdrop-filter: blur(10px);
+            /* backdrop-filter: blur(10px); */
             padding: 15px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             position: sticky;
@@ -50,34 +54,30 @@
         }
 
         .logo {
+            max-height: 50px;
             display: flex;
             align-items: center;
             gap: 10px;
             color: white;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-icon i {
-            color: #1e3a8a;
-            font-size: 20px;
+        .logo img {
+            max-height: 50px;
+            object-fit: contain;
         }
 
         .logo-text {
-            font-size: 18px;
-            font-weight: 600;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif; /* Keeping Playfair Display for company name */
+            font-size: 22px;
+            font-weight: 800;
             line-height: 1.2;
         }
 
         .logo-subtitle {
+ font-family: 'Inter', sans-serif; /* Using Inter or another simple font for subtitle */
             font-size: 12px;
             opacity: 0.8;
             font-weight: 400;
@@ -125,20 +125,22 @@
             padding: 80px 0;
             color: white;
             position: relative;
+            overflow: hidden; /* Ensure pseudo-element is clipped */
         }
 
         .hero-content {
             display: grid;
             grid-template-columns: 1fr 400px;
             gap: 60px;
-            align-items: center;
         }
+
 
         .hero-left h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            font-weight: 700;
+            font-weight: 800;
             line-height: 1.1;
+ font-family: 'Playfair Display', serif;
         }
 
         .hero-subtitle {
@@ -164,7 +166,7 @@
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 30px;
-            backdrop-filter: blur(10px);
+            /* backdrop-filter: blur(10px); */
         }
 
         .session-info h3 {
@@ -184,7 +186,7 @@
         }
 
         .btn-primary {
-            background: #fbbf24;
+            background: #FBBF24;
             color: #1f2937;
             padding: 15px 30px;
             border: none;
@@ -196,7 +198,7 @@
         }
 
         .btn-primary:hover {
-            background: #f59e0b;
+            background: #F59E0B;
             transform: translateY(-2px);
         }
 
@@ -213,7 +215,7 @@
         }
 
         .btn-secondary:hover {
-            background: white;
+            background: #F1F5F9;
             color: #1e3a8a;
         }
 
@@ -221,13 +223,14 @@
         .registration-form {
             background: white;
             padding: 30px;
-            border-radius: 16px;
+            border-radius: 12px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .payment-toggle {
             display: flex;
             background: #f1f5f9;
+            border: 1px solid #E2E8F0;
             border-radius: 8px;
             margin-bottom: 25px;
             overflow: hidden;
@@ -255,7 +258,7 @@
         .form-group input,
         .form-group select {
             width: 100%;
-            padding: 12px 15px;
+            padding: 14px 15px;
             border: 2px solid #e2e8f0;
             border-radius: 8px;
             font-size: 14px;
@@ -276,7 +279,7 @@
         .country-flag {
             background: #f1f5f9;
             padding: 12px 10px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #E2E8F0;
             border-right: none;
             border-radius: 8px 0 0 8px;
             font-size: 16px;
@@ -293,6 +296,11 @@
             margin-bottom: 20px;
         }
 
+        .checkbox-group label {
+            font-size: 14px;
+            color: #475569;
+        }
+
         .price-display {
             background: #f8fafc;
             padding: 15px;
@@ -304,7 +312,7 @@
         .original-price {
             text-decoration: line-through;
             color: #64748b;
-            font-size: 14px;
+            font-size: 1rem;
         }
 
         .current-price {
@@ -333,7 +341,7 @@
         /* Features Section */
         .features {
             padding: 100px 0;
-            background: white;
+            background: #F8FAFC;
         }
 
         .features-grid {
@@ -344,9 +352,9 @@
         }
 
         .feature-card {
-            background: white;
+            background: #FFFFFF;
             padding: 30px;
-            border-radius: 16px;
+            border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             border: 1px solid #f1f5f9;
             transition: all 0.3s ease;
@@ -360,7 +368,7 @@
         .feature-card h3 {
             font-size: 1.4rem;
             margin-bottom: 15px;
-            color: #1e40af;
+            color: #0F172A;
             font-weight: 600;
         }
 
@@ -372,7 +380,7 @@
         /* Case Studies Section */
         .case-studies {
             padding: 100px 0;
-            background: #f8fafc;
+            background: #E2E8F0;
         }
 
         .section-title {
@@ -386,7 +394,7 @@
         .section-subtitle {
             text-align: center;
             font-size: 1.1rem;
-            color: #64748b;
+            color: #475569;
             margin-bottom: 60px;
             max-width: 600px;
             margin-left: auto;
@@ -400,7 +408,7 @@
         }
 
         .case-study-card {
-            background: white;
+            background: #FFFFFF;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -413,7 +421,7 @@
         }
 
         .case-study-header {
-            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            background: linear-gradient(135deg, #1E3A8A, #3B82F6);
             color: white;
             padding: 25px;
             text-align: center;
@@ -459,34 +467,9 @@
         .metric-value {
             font-weight: 600;
             color: #1e40af;
-        }
-
-        /* Trusted Companies */
-        .trusted-companies {
-            padding: 80px 0;
-            background: white;
-            text-align: center;
-        }
-
-        .companies-title {
-            font-size: 1.8rem;
-            color: #1e40af;
-            margin-bottom: 50px;
-            font-weight: 600;
-        }
-
-        .companies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 30px;
-            align-items: center;
-            opacity: 0.7;
-        }
-
-        .company-logo {
-            height: 60px;
             display: flex;
             align-items: center;
+            gap: 5px;
             justify-content: center;
             font-size: 24px;
             font-weight: bold;
@@ -499,7 +482,7 @@
         /* Testimonials */
         .testimonials {
             padding: 100px 0;
-            background: #f8fafc;
+            background: #F1F5F9;
         }
 
         .testimonials-grid {
@@ -510,7 +493,7 @@
         }
 
         .testimonial-card {
-            background: white;
+            background: #FFFFFF;
             padding: 30px;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -533,7 +516,7 @@
         .author-avatar {
             width: 50px;
             height: 50px;
-            background: #3b82f6;
+            background: #60A5FA;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -544,7 +527,7 @@
 
         .author-info h4 {
             color: #1e40af;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
@@ -555,7 +538,7 @@
 
         .rating {
             color: #fbbf24;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         /* Footer */
@@ -574,7 +557,7 @@
 
         .footer-section h3 {
             margin-bottom: 20px;
-            color: #60a5fa;
+            color: #93C5FD;
         }
 
         .footer-section p,
@@ -592,7 +575,7 @@
         }
 
         .footer-section ul li::before {
-            content: "•";
+            content: "↳";
             color: #60a5fa;
             margin-right: 10px;
         }
@@ -610,7 +593,7 @@
         }
 
         .social-links a:hover {
-            color: #60a5fa;
+            color: #93C5FD;
         }
 
         .footer-bottom {
@@ -621,25 +604,15 @@
         }
 
         /* Icon Fallbacks */
-        .fa::before {
-            font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 5 Free", "FontAwesome";
-            font-weight: 900;
-        }
-        
-        .fa-brain::before { content: "🧠"; font-family: emoji; }
-        .fa-shield::before { content: "🛡️"; font-family: emoji; }
-        .fa-search::before { content: "🔍"; font-family: emoji; }
-        .fa-credit-card::before { content: "💳"; font-family: emoji; }
-        .fa-code::before { content: "💻"; font-family: emoji; }
-        .fa-video-camera::before { content: "🎥"; font-family: emoji; }
-        .fa-sitemap::before { content: "🌐"; font-family: emoji; }
-        .fa-download::before { content: "⬇️"; font-family: emoji; }
-        .fa-star::before { content: "⭐"; font-family: emoji; }
-        .fa-linkedin::before { content: "💼"; font-family: emoji; }
-        .fa-twitter::before { content: "🐦"; font-family: emoji; }
-        .fa-github::before { content: "🔗"; font-family: emoji; }
-        .fa-medium::before { content: "📝"; font-family: emoji; }
+        /* Handled by Font Awesome CDN, no need for fallbacks */
 
+         /* Placeholder Image Styling */
+        .placeholder-img {
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            background-color: #E2E8F0;
+            border-radius: 12px;
+        }
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-content {
@@ -673,7 +646,7 @@
         @media (max-width: 480px) {
             .registration-form {
                 padding: 20px;
-            }
+            }            
 
             .hero {
                 padding: 50px 0;
@@ -687,10 +660,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fa fa-brain" aria-hidden="true"></i>
-                    </div>
-                    <div>
+ <img src="/logo.png" alt="AI Architect Club Logo">
                         <div class="logo-text">AI ARCHITECT CLUB</div>
                         <div class="logo-subtitle">BUILD. LEARN. EXCEL.</div>
                     </div>
@@ -720,8 +690,7 @@
                     </p>
                     
                     <div class="session-info">
-                        <h3>Session Begins 21st July 2025</h3>
-                        <p class="session-date">Limited to 10 participants per batch</p>
+ <h3>New batches start every month</h3>
                     </div>
 
                     <div class="hero-buttons">
@@ -734,54 +703,23 @@
 
                 <div class="registration-form" id="register">
                     <div class="payment-toggle">
-                        <div class="toggle-option active">Full Payment</div>
-                        <div class="toggle-option">Pay by Weeks</div>
-                    </div>
 
-                    <form id="registrationForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Full Parent / Guardian Name*" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" placeholder="Full Student Name*" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="phone-input">
-                                <div class="country-flag">🇦🇪</div>
-                                <input type="tel" placeholder="+971 XX XXX XXXX" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Experience Level</option>
-                                <option value="beginner">Beginner - New to AI</option>
-                                <option value="intermediate">Intermediate - Some AI knowledge</option>
-                                <option value="advanced">Advanced - Experienced with AI/ML</option>
-                                <option value="professional">Professional - AI Expert</option>
-                            </select>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="scholarship">
-                            <label for="scholarship">I have a scholarship code</label>
-                        </div>
-
-                        <div class="price-display">
-                            <div class="original-price">AED 6,000</div>
-                            <div class="current-price">AED 5,100</div>
-                        </div>
-
-                        <button type="submit" class="checkout-btn">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i> Proceed To Checkout
-                        </button>
-                    </form>
+                    
+    <iframe
+    id="JotFormIFrame-251773317080455"
+    title="Course Registration Form"
+    onload="window.parent.scrollTo(0,0)"
+    allowtransparency="true"
+    allow="geolocation; microphone; camera; fullscreen; payment"
+    src="https://form.jotform.com/251773317080455"
+    frameborder="0"
+    style="min-width:100%;max-width:100%;height:539px;border:none;"
+    scrolling="no"
+  >
+  </iframe>
+  <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+  <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251773317080455']", "https://form.jotform.com/")</script>
+  
                 </div>
             </div>
         </div>
@@ -824,24 +762,6 @@
                         <h3 class="case-study-title">Auto-detect PII Data Leakage</h3>
                         <p class="case-study-subtitle">Financial Services Data Protection</p>
                     </div>
-                    <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Detection Accuracy</span>
-                            <span class="metric-value">99.7%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">False Positives</span>
-                            <span class="metric-value">< 0.2%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Processing Speed</span>
-                            <span class="metric-value">15K docs/min</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Compliance Score</span>
-                            <span class="metric-value">GDPR Ready</span>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="case-study-card">
@@ -849,26 +769,8 @@
                         <div class="case-study-icon">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
-                        <h3 class="case-study-title">Intelligent Root Cause Analysis</h3>
+ <h3 class="case-study-title">Intelligent Root Cause Analysis</h3>
                         <p class="case-study-subtitle">Manufacturing System Diagnostics</p>
-                    </div>
-                    <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Issue Resolution</span>
-                            <span class="metric-value">92% faster</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Prediction Accuracy</span>
-                            <span class="metric-value">96.3%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Downtime Reduction</span>
-                            <span class="metric-value">-78%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Cost Savings</span>
-                            <span class="metric-value">$3.2M/year</span>
-                        </div>
                     </div>
                 </div>
 
@@ -878,127 +780,41 @@
                             <i class="fa fa-credit-card" aria-hidden="true"></i>
                         </div>
                         <h3 class="case-study-title">Real-time Fraud Prevention</h3>
-                        <p class="case-study-subtitle">Banking Transaction Security</p>
-                    </div>
-                    <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Fraud Detection</span>
-                            <span class="metric-value">99.9%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Response Time</span>
-                            <span class="metric-value">< 25ms</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">False Declines</span>
-                            <span class="metric-value">-85%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Revenue Protected</span>
-                            <span class="metric-value">$22M/year</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="case-study-title">AI Code Generation Platform</h3>
                         <p class="case-study-subtitle">Enterprise Development Acceleration</p>
                     </div>
                     <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Code Quality Score</span>
-                            <span class="metric-value">97.5%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Development Speed</span>
-                            <span class="metric-value">4x faster</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Bug Reduction</span>
-                            <span class="metric-value">-73%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Team Productivity</span>
-                            <span class="metric-value">+250%</span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-video-camera" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="case-study-title">Multi-modal Video Intelligence</h3>
-                        <p class="case-study-subtitle">Media Content Analysis Platform</p>
-                    </div>
-                    <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Object Recognition</span>
-                            <span class="metric-value">98.9%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Processing Speed</span>
-                            <span class="metric-value">Real-time 4K</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Content Categories</span>
-                            <span class="metric-value">25+ types</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Analysis Accuracy</span>
-                            <span class="metric-value">96.8%</span>
-                        </div>
-                    </div>
-                </div>
+ <div class="case-study-header">
+ <div class="case-study-icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+ </div>
+                        <h3 class="case-study-title">AI Code Generation Platform</h3>
+ <p class="case-study-subtitle">Enterprise Development Acceleration</p>
+ </div>
+ </div>
 
                 <div class="case-study-card">
                     <div class="case-study-header">
                         <div class="case-study-icon">
-                            <i class="fa fa-sitemap" aria-hidden="true"></i>
+                            <i class="fa fa-video" aria-hidden="true"></i>
                         </div>
+ <h3 class="case-study-title">Multi-modal Video Intelligence</h3>
+ <p class="case-study-subtitle">Media Content Analysis Platform</p>
+ </div>
+ </div>
+
+ <div class="case-study-card">
+ <div class="case-study-header">
+ <div class="case-study-icon">
+                            <i class="fa fa-network-wired" aria-hidden="true"></i>
+ </div>
                         <h3 class="case-study-title">Distributed AI Agent Network</h3>
-                        <p class="case-study-subtitle">Smart City Infrastructure Management</p>
-                    </div>
-                    <div class="case-study-content">
-                        <div class="case-study-metric">
-                            <span class="metric-label">Agent Coordination</span>
-                            <span class="metric-value">99.5%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Resource Optimization</span>
-                            <span class="metric-value">-42%</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Response Time</span>
-                            <span class="metric-value">< 100ms</span>
-                        </div>
-                        <div class="case-study-metric">
-                            <span class="metric-label">Network Scale</span>
-                            <span class="metric-value">5000+ nodes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trusted Companies -->
-    <section class="trusted-companies">
-        <div class="container">
-            <h2 class="companies-title">Trusted by 35,600+ professionals and leaders from companies including</h2>
-            <div class="companies-grid">
-                <div class="company-logo">Accenture</div>
-                <div class="company-logo">Adobe</div>
-                <div class="company-logo">Apple</div>
-                <div class="company-logo">Deutsche Bank</div>
-                <div class="company-logo">KPMG</div>
-                <div class="company-logo">Mastercard</div>
-                <div class="company-logo">L'ORÉAL</div>
+ <p class="case-study-subtitle">Smart City Infrastructure Management</p>
+ </div>
+ </div>
             </div>
         </div>
     </section>
@@ -1010,120 +826,84 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <p class="testimonial-quote">
-                        "This program is a gamechanger - using what I learned in one month I'll be able to level-up my whole team and increase our productivity by at least 2x immediately."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">KG</div>
-                        <div class="author-info">
-                            <h4>Kate Goodall</h4>
-                            <p>Senior AI Engineer, Halcyon</p>
-                            <div class="rating">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "Great content for everyone from AI experts to those new to it. The hands-on approach with real applications made complex concepts incredibly clear. Bring your entire leadership team!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">ZM</div>
-                        <div class="author-info">
-                            <h4>Zach Morrison</h4>
-                            <p>CTO, Tinuiti</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "Changed the trajectory of our business for the better, immediately and permanently. The practical AI applications we built are now core to our operations. Thank you!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JL</div>
-                        <div class="author-info">
-                            <h4>Jake Laban</h4>
-                            <p>Founder, Skin by Lovely</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "The program was fascinating and reiterated the importance of staying curious and embracing technology. The MIT-certified curriculum exceeded all expectations."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DJ</div>
-                        <div class="author-info">
-                            <h4>Dillon Jearey</h4>
-                            <p>Director, Entrepreneurs Organization</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "Amazing program that opened my eyes to many new tools to leverage AI. Really helped in making abstract AI concepts real with tangible business applications."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
-                        <div class="author-info">
-                            <h4>Sarah Mitchell</h4>
-                            <p>VP Innovation, TechCorp</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "Eye opening and intriguing. I was blown away and motivated at the same time. The practical applications we built are now integral to our AI strategy."
+                        "The GenAI sessions were exactly what I needed to jumpstart my understanding and application of generative AI. The instructor's expertise and the hands-on labs were incredibly valuable."
                     </p>
                     <div class="testimonial-author">
                         <div class="author-avatar">RP</div>
                         <div class="author-info">
-                            <h4>Robert Phillips</h4>
-                            <p>Chief AI Officer, InnovateLabs</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                            <h4>Raja P</h4>
+                            <p>Airlines, Developer</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "I was impressed by how quickly I was able to build working GenAI applications. The program is well-structured and the support provided makes learning accessible and enjoyable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RM</div>
+                        <div class="author-info">
+                            <h4>Rajesh Mishra</h4>
+                            <p>Devops</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "As someone with limited AI experience, I found the GenAI sessions incredibly empowering. I now have a solid foundation and the confidence to explore more advanced topics."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">HC</div>
+                        <div class="author-info">
+                            <h4>Herna Chandra</h4>
+                            <p>Airlines, Developer</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "The practical focus of the GenAI sessions is a major plus. Building real applications helped me solidify my understanding and see the immediate impact of GenAI."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">NP</div>
+                        <div class="author-info">
+                            <h4>Naga Prasad</h4>
+                            <p>Airlines</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "The instructor made complex GenAI concepts easy to understand and apply. I highly recommend this program to anyone looking to gain practical skills in this rapidly evolving field."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <h4>Achyut Shukla</h4>
+                            <p>Banking, Automation Tester</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "This program exceeded my expectations. The hands-on approach and the focus on building real-world applications made learning GenAI both engaging and effective."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PC</div>
+                        <div class="author-info">
+                            <h4>Phani Chandra</h4>
+                            <p>Airlines, Developer</p>
+
                         </div>
                     </div>
                 </div>
@@ -1132,6 +912,21 @@
     </section>
 
     <!-- Footer -->
+   
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="background-color: #f8fafc; padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" style="color: #1e40af; margin-bottom: 30px;">Get in Touch</h2>
+            <div class="contact-info" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="https://wa.me/+919686694142" style="text-decoration: none; color: #333; display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+                    <i class="fab fa-whatsapp" style="color: #25D366; font-size: 2rem;"></i> +91 96866 94142
+                </a>
+                <a href="mailto:aiarchitectclub@gmail.com" style="text-decoration: none; color: #333; display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+                    <i class="fas fa-envelope" style="color: #D44638; font-size: 2rem;"></i> aiarchitectclub@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -1140,11 +935,9 @@
                     <p>Empowering the next generation of AI architects through hands-on, practical education and real-world application development. MIT-certified curriculum with proven enterprise results.</p>
                     <div class="social-links">
                         <a href="https://vijayredkar.medium.com/" title="Medium Blog" target="_blank">
-                            <i class="fa fa-medium" aria-hidden="true"></i>
+ <i class="fab fa-medium" aria-hidden="true"></i>
                         </a>
-                        <a href="#" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+ <a href="https://www.linkedin.com/in/ai-architect-club/" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -1173,15 +966,13 @@
                 <div class="footer-section">
                     <h3>Contact Information</h3>
                     <p>Ready to transform your AI skills and build enterprise-grade applications?</p>
-                    <p><strong>Session Starts:</strong> July 21st, 2025</p>
                     <p><strong>Duration:</strong> 4 Weeks Intensive</p>
                     <p><strong>Format:</strong> Hands-on Workshop</p>
-                    <p><strong>Batch Size:</strong> Limited to 10 participants</p>
                     <p>Get in touch to secure your spot in the next exclusive cohort.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AI Architect Club. All rights reserved. | Next Batch: July 21st - Limited to 10 participants | MIT Certified Program</p>
+                <p>&copy; 2025 AI Architect Club. All rights reserved. | New batches start every month - Limited to 10 participants | MIT Certified Trainer</p>
             </div>
         </div>
     </footer>
