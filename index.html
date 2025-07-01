@@ -76,7 +76,7 @@
             justify-content: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-family: 'Inter', sans-serif; /* Keeping Playfair Display for company name */
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 800;
             line-height: 1.2;
         }
@@ -139,6 +139,43 @@
             gap: 60px;
         }
 
+/* Styles for the "Proven AI Solutions You'll Build" section */
+
+ /* Enhance hero-content padding and margins */
+ .hero-content {
+ padding: 60px 0; /* Increased vertical padding */
+ display: grid;
+ grid-template-columns: 1fr 400px;
+ gap: 80px; /* Increased gap between left and right columns */
+ }
+
+ /* Style for the newly added solution boxes */
+ .solution-item .case-study-card {
+ border: 1px solid #3b82f6; /* Blue border */
+ border-radius: 10px; /* Rounded corners */
+ overflow: hidden;
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ transition: transform 0.3s ease;
+ margin-bottom: 20px; /* Space between solution boxes */
+ }
+
+/* Styles for the two paragraphs in the hero section */
+.hero-description {
+ font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    opacity: 0.9;
+ font-weight: 600; /* Added font weight */
+    color: #E2E8F0; /* Lighter color for contrast */
+}
+
+.hero-content p:not(.hero-description) { /* Select the second paragraph */
+    font-size: 1rem; /* Slightly smaller font size */
+    line-height: 1.5;
+    margin-bottom: 30px; /* Restore original bottom margin */
+    opacity: 0.8;
+    color: #CBD5E1; /* Even lighter color */
+}
 
         .hero-left h1 {
             font-size: 3rem;
@@ -159,12 +196,6 @@
             margin-bottom: 30px;
         }
 
-        .hero-description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
 
         .session-info {
             background: rgba(255, 255, 255, 0.1);
@@ -670,6 +701,24 @@
             }
         }
     </style>
+ <style>
+ /* Make the solution cards thinner */
+ .solution-item .case-study-card {
+ max-width: 400px; /* Set a maximum width */
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+ .solution-item .case-study-header {
+ padding: 15px; /* Adjust padding for thinner appearance */
+ }
+
+ .solution-item .case-study-title {
+ font-size: 1rem; /* Adjust font size if needed */
+ margin: 0; /* Remove default margin */
+ line-height: 1.4; /* Adjust line height */
+ }
+ </style>
 </head>
 <body>
     <!-- Header -->
@@ -684,8 +733,6 @@
                 </div>
                 <nav class="nav-menu">
                     <a href="#program" class="nav-link">About Program</a>
-                    <a href="#case-studies" class="nav-link">Case Studies</a>
-                    <a href="#testimonials" class="nav-link">Reviews</a>
                     <a href="#register" class="register-btn">Connect Now</a>
                 </nav>
             </div>
@@ -697,23 +744,63 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-left">
-                    <h1>AI Architect Club - Build Real GenAI Applications In One Month</h1>
-                    <div class="hero-subtitle">MIT Certified | Instructor Led Program</div>
+                    <h1>AI Architect Club</h1>
+                    <div class="hero-subtitle">MIT Certified Instructor Led Program</div>
                     <p class="hero-description">
-                        Master the art of AI architecture through hands-on creation of 5 focused GenAI applications. 
-                        From fraud prevention to dynamic code generation, build enterprise-ready solutions that matter.
-                        Complete working AI setup on your local machine included.
+                        Proven AI Solutions You'll Build
                     </p>
-                    
+ <p>Learn from real-world implementations and build enterprise-grade AI applications that solve actual business problems</p>
+                    <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">Auto-detect PII/GDPR leakage<br>with Ollama & Qwen</h3>
+                        </div>
+                        </div>
+                                       </div>
+                                       <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">Production logs root cause analysis<br>with Qdrant VectorDb</h3>
+                        </div>
+                        </div>
+                                       </div>
+                                       <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">Creditcard fraud prevention<br>with Ollama & Chain of Thoughts</h3>
+                        </div>
+                        </div>
+                                       </div>
+                                       <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">AI powered autonomous Programmer & QA<br>with llama3</h3>
+                        </div>
+                        </div>
+                                       </div>
+                                       <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">Agentic mutimodal video analyzer<br>with Agno, Crewai, Langgraph</h3>
+                        </div>
+                        </div>
+                                       </div>
+                                       <div class="solution-item">
+                        <div class="case-study-card">
+                                               <div class="case-study-header">
+                        <h3 class="case-study-title">Autonomous ticket booking system<br>with MCP & Ollama</h3>
+                        </div>
+                                       </div>
+                                   </div>
                     <div class="session-info">
- <h3>Batch enrolment in progress. Limits to 10 only</h3>
+ <h3>Batch enrollment in progress. Limits to 10 only</h3>
                     </div>
 
                     <div class="hero-buttons">
-                        <a href="https://wa.me/+918826446121" class="btn-primary" target="_blank" style="text-decoration: none; color: #1f2937; background-color: #FBBF24;display: flex;
+                        <a href="https://wa.me/+971509951607" class="btn-primary" target="_blank" style="text-decoration: none; color: #1f2937; background-color: #FBBF24;display: flex;
             align-items: center;
             gap: 10px;">
- <i class="fab fa-whatsapp" aria-hidden="true"></i> +91 88264 46121
+ <i class="fab fa-whatsapp" aria-hidden="true"></i> +971 509951607
                         </a>
                         <a href="mailto:aiarchitectclub@gmail.com" class="btn-secondary" style="text-decoration: none; color: white; border: 2px solid white;display: flex;
             align-items: center;
@@ -742,241 +829,12 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="program">
-        <div class="container">
-            <h2 class="section-title">Real-World AI Skills</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Build Apps & Projects</h3>
-                    <p>Build future-ready skills by creating real-world GenAI applications—ranging from interactive chatbots to enterprise-grade AI solutions. Gain hands-on experience through an MIT-certified curriculum focused on practical, high-impact projects.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Start From Scratch</h3>
-                    <p>No coding background needed. We start from the basics and guide every participant to unlock their creative and problem-solving potential in AI development.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Safe & Inspiring Learning</h3>
-                    <p>Small-group, instructor-led sessions with personalized mentorship ensure a highly engaging experience. MIT-certified curriculum with proven results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Studies Section -->
-    <section class="case-studies" id="case-studies">
-        <div class="container">
-            <h2 class="section-title">Proven AI Solutions You'll Build</h2>
-            <p class="section-subtitle">
-                Learn from real-world implementations by Vijay Redkar and build enterprise-grade AI applications that solve actual business problems
-            </p>
-            <div class="case-studies-grid">
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-shield" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="case-study-title">Auto-detect PII Data Leakage</h3>
-                        <p class="case-study-subtitle">Financial Services Data Protection</p>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
- <h3 class="case-study-title">Intelligent Root Cause Analysis</h3>
-                        <p class="case-study-subtitle">Manufacturing System Diagnostics</p>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="case-study-title">Real-time Fraud Prevention</h3>
-                        <p class="case-study-subtitle">Enterprise Development Acceleration</p>
-                    </div>
-                    <div class="case-study-content">
-                    </div>
-                </div>
-
-                <div class="case-study-card">
- <div class="case-study-header">
- <div class="case-study-icon">
-                            <i class="fa fa-code" aria-hidden="true"></i>
- </div>
-                        <h3 class="case-study-title">AI Code Generation Platform</h3>
- <p class="case-study-subtitle">Enterprise Development Acceleration</p>
- </div>
- </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-icon">
-                            <i class="fa fa-video" aria-hidden="true"></i>
-                        </div>
- <h3 class="case-study-title">Multi-modal Video Intelligence</h3>
- <p class="case-study-subtitle">Media Content Analysis Platform</p>
- </div>
- </div>
-
- <div class="case-study-card">
- <div class="case-study-header">
- <div class="case-study-icon">
-                            <i class="fa fa-network-wired" aria-hidden="true"></i>
- </div>
-                        <h3 class="case-study-title">Distributed AI Agent Network</h3>
- <p class="case-study-subtitle">Smart City Infrastructure Management</p>
- </div>
- </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Alumni Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "The GenAI sessions were exactly what I needed to jumpstart my understanding and application of generative AI. The instructor's expertise and the hands-on labs were incredibly valuable."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RP</div>
-                        <div class="author-info">
-                            <h4>Raja P</h4>
-                            <p>Airlines, Developer</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "I was impressed by how quickly I was able to build working GenAI applications. The program is well-structured and the support provided makes learning accessible and enjoyable."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RM</div>
-                        <div class="author-info">
-                            <h4>Rajesh Mishra</h4>
-                            <p>Devops</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "As someone with limited AI experience, I found the GenAI sessions incredibly empowering. I now have a solid foundation and the confidence to explore more advanced topics."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">HC</div>
-                        <div class="author-info">
-                            <h4>Hema Chandra</h4>
-                            <p>Airlines, Developer</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "The practical focus of the GenAI sessions is a major plus. Building real applications helped me solidify my understanding and see the immediate impact of GenAI."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">NP</div>
-                        <div class="author-info">
-                            <h4>Naga Prasad</h4>
-                            <p>Airlines</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "The instructor made complex GenAI concepts easy to understand and apply. I highly recommend this program to anyone looking to gain practical skills in this rapidly evolving field."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">AS</div>
-                        <div class="author-info">
-                            <h4>Achyut Shukla</h4>
-                            <p>Banking, Automation Tester</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">
-                        "This program exceeded my expectations. The hands-on approach and the focus on building real-world applications made learning GenAI both engaging and effective."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DR</div>
-                        <div class="author-info">
-                            <h4>Deepak Radhakrishnan</h4>
-                            <p>Banking, Automation QA</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI Architect Club</h3>
-                    <p>Empowering the next generation of AI architects through hands-on, practical education and real-world application development. MIT-certified curriculum with proven enterprise results.</p>
-                    <div class="social-links">
-                        <a href="https://vijayredkar.medium.com/" title="Medium Blog" target="_blank">
- <i class="fab fa-medium" aria-hidden="true"></i>
-                        </a>
- <a href="https://www.linkedin.com/in/ai-architect-club/" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Program Highlights</h3>
-                    <ul>
-                        <li>MIT Certified Instruction</li>
-                        <li>5 Real-world GenAI Applications</li>
-                        <li>Complete Local AI Setup</li>
-                        <li>Limited to 10 Participants</li>
-                        <li>Hands-on Project Experience</li>
-                        <li>Enterprise-grade Solutions</li>
-                        <li>Industry Case Studies</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>What You'll Build</h3>
-                    <ul>
-                        <li>PII Data Leakage Detection System</li>
-                        <li>Root Cause Analysis Engine</li>
-                        <li>Credit Card Fraud Prevention</li>
-                        <li>Dynamic Code Generation Tool</li>
-                        <li>Interactive Video Analyzer</li>
-                        <li>Multi-Agent AI Architecture</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Information</h3>
-                    <p>Ready to transform your AI skills and build enterprise-grade applications?</p>
-                    <p><strong>Duration:</strong> 4 Weeks Intensive</p>
-                    <p><strong>Format:</strong> Hands-on Workshop</p>
-                    <p>Get in touch to secure your spot in the next exclusive cohort.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AI Architect Club. All rights reserved. | Batch enrolment in progress. Limits to 10 only | MIT Certified Trainer</p>
-            </div>
-        </div>
+        <script
+  src='https://cdn.jotfor.ms/agent/embedjs/0197c7372f4d712b83d98fcbcd24c6294aa6/embed.js?skipWelcome=1&maximizable=1'>
+</script>
     </footer>
 
     <script>
