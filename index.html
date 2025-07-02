@@ -143,7 +143,7 @@
 
  /* Enhance hero-content padding and margins */
  .hero-content {
- padding: 60px 0; /* Increased vertical padding */
+ padding: 20px 0; /* Increased vertical padding */
  display: grid;
  grid-template-columns: 1fr 400px;
  gap: 80px; /* Increased gap between left and right columns */
@@ -663,7 +663,11 @@
         }
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hero {
+                padding: 10px 0;
+            }
             .hero-content {
+                padding:20px 0;
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
@@ -697,7 +701,7 @@
             }            
 
             .hero {
-                padding: 50px 0;
+                padding: 10px 0;
             }
         }
     </style>
