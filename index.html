@@ -1,982 +1,168 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Architect Club - AI Competency in One Month</title>
-    <meta name="description" content="Unlock your potential as an AI Architect. Build real-world GenAI applications in just one month with our MIT Certified Instructor Led Program. Hands-on projects and practical skills for the future of AI.">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+  <title>Preview - Bootstrap Themes</title>
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
+  <link rel="pingback" href="https://themes.getbootstrap.com/xmlrpc.php" />
 
-    <!-- Open Graph / LinkedIn Meta Tags -->
-    <meta property="og:title" content="Build Real GenAI Applications in One Month | AI Architect Club">
-    <meta property="og:description" content="Unlock your potential as an AI Architect. Build real-world GenAI applications in just one month with our MIT Certified Instructor Led Program. Hands-on projects and practical skills for the future of AI.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="/link-img.png">
-    <meta property="article:author" content="AI Architect Club">
-    <meta property="article:published_time" content="2023-10-26T10:00:00Z">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <link rel='apple-touch-icon' sizes='180x180' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/apple-touch-icon.png'>
+  <link rel='icon' type='image/png' sizes='32x32' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-32x32.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-16x16.png'>
+  <link rel='manifest' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/manifest.json'>
+  <link rel='shortcut icon' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon.ico'>
+  <meta name='msapplication-config' content='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/browserconfig.xml'>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
-            min-height: 100vh;
-            color: #333;
-        }
+  
+<!-- This site is optimized with the Yoast SEO plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://themes.getbootstrap.com/preview/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Preview - Bootstrap Themes" />
+<meta property="og:url" content="https://themes.getbootstrap.com/preview/" />
+<meta property="og:site_name" content="Bootstrap Themes" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Preview - Bootstrap Themes" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://themes.getbootstrap.com/#website","url":"https://themes.getbootstrap.com/","name":"Bootstrap Themes","description":"Built and Curated by the Bootstrap Team","potentialAction":{"@type":"SearchAction","target":"https://themes.getbootstrap.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://themes.getbootstrap.com/preview/#webpage","url":"https://themes.getbootstrap.com/preview/","inLanguage":"en-US","name":"Preview - Bootstrap Themes","isPartOf":{"@id":"https://themes.getbootstrap.com/#website"},"datePublished":"2017-10-18T20:24:13+00:00","dateModified":"2017-10-18T20:24:13+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        .header {
-            background: rgba(30, 58, 138, 0.95);
-            /* backdrop-filter: blur(10px); */
-            padding: 15px 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            max-height: 50px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: white;
-        }
-
-        .logo img {
-            max-height: 50px;
-            object-fit: contain;
-        }
-
-        .logo-text {
-            align-items: center;
-            justify-content: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-family: 'Inter', sans-serif; /* Keeping Playfair Display for company name */
-            font-size: 16px;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .logo-subtitle {
- font-family: 'Inter', sans-serif; /* Using Inter or another simple font for subtitle */
-            font-size: 12px;
-            opacity: 0.8;
-            font-weight: 400;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .nav-link {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            opacity: 0.9;
-        }
-
-        .nav-link:hover {
-            opacity: 1;
-            color: #60a5fa;
-        }
-
-        .register-btn {
-            background: #3b82f6;
-            color: white;
-            padding: 10px 25px;
-            border: 2px solid #3b82f6;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 14px;
-        }
-
-        .register-btn:hover {
-            background: transparent;
-            color: #3b82f6;
-            border-color: #3b82f6;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 0;
-            color: white;
-            position: relative;
-            overflow: hidden; /* Ensure pseudo-element is clipped */
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 500px;
-            gap: 60px;
-        }
-
-/* Styles for the "Proven AI Solutions You'll Build" section */
-
- /* Enhance hero-content padding and margins */
- .hero-content {
- padding: 20px 0; /* Increased vertical padding */
- display: grid;
- grid-template-columns: 1fr 400px;
- gap: 80px; /* Increased gap between left and right columns */
- }
-
- /* Style for the newly added solution boxes */
- .solution-item .case-study-card {
- border: 1px solid #3b82f6; /* Blue border */
- border-radius: 10px; /* Rounded corners */
- overflow: hidden;
- box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
- transition: transform 0.3s ease;
- margin-bottom: 20px; /* Space between solution boxes */
- }
-
-/* Styles for the two paragraphs in the hero section */
-.hero-description {
- font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 10px; /* Reduced bottom margin */
-    opacity: 0.9;
- font-weight: 600; /* Added font weight */
-    color: #E2E8F0; /* Lighter color for contrast */
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Bootstrap Themes &raquo; Feed" href="https://themes.getbootstrap.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bootstrap Themes &raquo; Comments Feed" href="https://themes.getbootstrap.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/themes.getbootstrap.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-
-.hero-content p:not(.hero-description) { /* Select the second paragraph */
-    font-size: 1rem; /* Slightly smaller font size */
-    line-height: 1.5;
-    margin-bottom: 30px; /* Restore original bottom margin */
-    opacity: 0.8;
-    color: #CBD5E1; /* Even lighter color */
-}
-
-        .hero-left h1 {
-            font-size: 3rem;
-            margin: 10px 0px;
-            font-weight: 800;
-            line-height: 1.1;
- font-family: 'Playfair Display', serif;
-        }
-
-        .hero-subtitle {
-            background: #1d4ed8;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            display: inline-block;
-            margin: 10px 0 0 60px ;
-        }
-
-
-        .session-info {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            /* backdrop-filter: blur(10px); */
-        }
-
-        .session-info h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        .session-date {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: #FBBF24;
-            color: #1f2937;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 16px;
-        }
-
-        .btn-primary:hover {
-            background: #F59E0B;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            padding: 15px 30px;
-            border: 2px solid white;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 16px;
-        }
-
-        .btn-secondary:hover {
-            background: #F1F5F9;
-            color: #1e3a8a;
-        }
-
-        .btn-primary {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .btn-primary img {
-            width: 24px;
-            height: 24px;
-            object-fit: contain;
-        }
-
-        /* Registration Form */
-        .registration-form {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .payment-toggle {
-            display: flex;
-            background: #f1f5f9;
-            border: 1px solid #E2E8F0;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            overflow: hidden;
-        }
-
-        .toggle-option {
-            flex: 1;
-            padding: 12px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .toggle-option.active {
-            background: #3b82f6;
-            color: white;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 14px 15px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-
-        .phone-input {
-            display: flex;
-            align-items: center;
-        }
-
-        .country-flag {
-            background: #f1f5f9;
-            padding: 12px 10px;
-            border: 2px solid #E2E8F0;
-            border-right: none;
-            border-radius: 8px 0 0 8px;
-            font-size: 16px;
-        }
-
-        .phone-input input {
-            border-radius: 0 8px 8px 0;
-        }
-
-        .checkbox-group {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .checkbox-group label {
-            font-size: 14px;
-            color: #475569;
-        }
-
-        .price-display {
-            background: #f8fafc;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .original-price {
-            text-decoration: line-through;
-            color: #64748b;
-            font-size: 1rem;
-        }
-
-        .current-price {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1e40af;
-        }
-
-        .checkout-btn {
-            width: 100%;
-            background: #3b82f6;
-            color: white;
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .checkout-btn:hover {
-            background: #2563eb;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: #F8FAFC;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .feature-card {
-            background: #FFFFFF;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f1f5f9;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .feature-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: #0F172A;
-            font-weight: 600;
-        }
-
-        .feature-card p {
-            color: #64748b;
-            line-height: 1.6;
-        }
-
-        /* Case Studies Section */
-        .case-studies {
-            padding: 100px 0;
-            background: #E2E8F0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #1e40af;
-            font-weight: 700;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #475569;
-            margin-bottom: 60px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .case-studies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .case-study-card {
-            background: #FFFFFF;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .case-study-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .case-study-header {
-            background: linear-gradient(135deg, #1E3A8A, #3B82F6);
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        .case-study-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        .case-study-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .case-study-subtitle {
-            opacity: 0.9;
-            font-size: 0.9rem;
-        }
-
-        .case-study-content {
-            padding: 25px;
-        }
-
-        .case-study-metric {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #f1f5f9;
-        }
-
-        .case-study-metric:last-child {
-            border-bottom: none;
-        }
-
-        .metric-label {
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-
-        .metric-value {
-            font-weight: 600;
-            color: #1e40af;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #64748b;
-            background: #f8fafc;
-            border-radius: 8px;
-            padding: 15px;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background: #F1F5F9;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .testimonial-card {
-            background: #FFFFFF;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            position: relative;
-        }
-
-        .testimonial-quote {
-            font-style: italic;
-            color: #4b5563;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            background: #60A5FA;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .author-info h4 {
-            color: #1e40af;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .author-info p {
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-
-        .rating {
-            color: #fbbf24;
-            margin-top: 5px;
-        }
-
-        /* Footer */
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            padding: 60px 0 30px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 20px;
-            color: #93C5FD;
-        }
-
-        .footer-section p,
-        .footer-section ul {
-            line-height: 1.6;
-            opacity: 0.9;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 8px;
-        }
-
-        .footer-section ul li::before {
-            content: "↳";
-            color: #60a5fa;
-            margin-right: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.3rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #93C5FD;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #374151;
-            padding-top: 20px;
-            text-align: center;
-            opacity: 0.8;
-        }
-
-        /* Icon Fallbacks */
-        /* Handled by Font Awesome CDN, no need for fallbacks */
-
-         /* Placeholder Image Styling */
-        .placeholder-img {
-            width: 100%;
-            height: 300px; /* Adjust height as needed */
-            background-color: #E2E8F0;
-            border-radius: 12px;
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 10px 0;
-            }
-            .hero-content {
-                padding:20px 0;
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .hero-left h1 {
-                font-size: 2.2rem;
-            }
-
-            .nav-menu {
-                display: none;
-            }
-
-            .features-grid,
-            .case-studies-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .companies-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .registration-form {
-                padding: 20px;
-            }            
-
-            .hero {
-                padding: 10px 0;
-            }
-        }
-    </style>
- <style>
- /* Make the solution cards thinner */
- .solution-item .case-study-card {
- max-width: 100%; /* Set a maximum width */
- margin-left: auto;
- margin-right: auto;
- }
-
- .solution-item .case-study-header {
- padding: 15px; /* Adjust padding for thinner appearance */
- }
-
- .solution-item .case-study-title {
- font-size: 1rem; /* Adjust font size if needed */
- margin: 0; /* Remove default margin */
- line-height: 1.4; /* Adjust line height */
- }
- </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
- <img src="./logo.png" alt="AI Architect Club Logo">
-                        <div class="logo-text">AI ARCHITECT CLUB</div>
-                        <div class="logo-subtitle">BUILD. LEARN. EXCEL.</div>
-                    </div>
-                </div>
-                <div class="hero-subtitle">MIT Certified Instructor Led Program</div>
-
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <p class="hero-description">
-                        Proven AI Solutions You'll Build
-                    </p>
- <p>Learn by engineering Real World GenAI Case Studies from ground up.
-    Complete GenAI setup created on your local machine.</p>
-                    <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">Auto-detect PII/GDPR leakage<br>with Ollama & Qwen</h3>
-                        </div>
-                        </div>
-                                       </div>
-                                       <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">Production logs root cause analysis<br>with Qdrant VectorDb</h3>
-                        </div>
-                        </div>
-                                       </div>
-                                       <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">Creditcard fraud prevention<br>with Ollama & Chain of Thoughts</h3>
-                        </div>
-                        </div>
-                                       </div>
-                                       <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">AI powered autonomous Programmer & QA<br>with llama3</h3>
-                        </div>
-                        </div>
-                                       </div>
-                                       <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">Agentic mutimodal video analyzer<br>with Agno, Crewai, Langgraph</h3>
-                        </div>
-                        </div>
-                                       </div>
-                                       <div class="solution-item">
-                        <div class="case-study-card">
-                                               <div class="case-study-header">
-                        <h3 class="case-study-title">Autonomous ticket booking system<br>with MCP & Ollama</h3>
-                        </div>
-                                       </div>
-                                   </div>
-                    <div class="session-info">
- <h3>Batch enrollment in progress. Limits to 10 only</h3>
-                    </div>
-
-                    <div class="hero-buttons">
-                        <a href="https://wa.me/+971509951607" class="btn-primary" target="_blank" style="text-decoration: none; color: #1f2937; background-color: #FBBF24;display: flex;
-            align-items: center;
-            gap: 10px;">
- <i class="fab fa-whatsapp" aria-hidden="true"></i> +971 509951607
-                        </a>
-                        <a href="mailto:aiarchitectclub@gmail.com" class="btn-secondary" style="text-decoration: none; color: white; border: 2px solid white;display: flex;
-            align-items: center;
-            gap: 10px;"><i class="fas fa-envelope" aria-hidden="true"></i> aiarchitectclub@gmail.com</a>
-                    </div>
-                    <div class="program-schedule">
-  <h3 style="margin-top: 30px; color: #FBBF24;">📅 Program Schedule – AI Architect Club</h3>
-  <ul style="color: #E2E8F0; line-height: 1.6; padding-left: 20px; font-weight: 500;">
-    <li>🟦 <strong>Day 1:</strong> Introduction to GenAI fundamentals, tools, architecture patterns, and AI setup essentials.</li>
-    <li>🟦 <strong>Day 2:</strong> Machine setup: Install and configure Docker, Ollama 3, Python, and ChromaDB for local AI development.</li>
-    <li>🟦 <strong>Day 3:</strong> Understand LLM fundamentals by solving public data queries and comparing traditional vs GenAI approaches.</li>
-    <li>🟦 <strong>Day 4:</strong> Hands-on with LLM-powered use cases using LangChain, Ollama, and RAG with contextual data.</li>
-    <li>🟦 <strong>Day 5:</strong> Solving real-world problems using LLM + Embedding workflows and AI-based team recommendations.</li>
-    <li>🟦 <strong>Day 6:</strong> Deep dive into Vector DBs (ChromaDB) for similarity search, document chunking, and retrieval flows.</li>
-    <li>🟦 <strong>Day 7:</strong> Implementing AI for education, PII detection, and meeting transcript summarization using PDF and audio.</li>
-    <li>🟦 <strong>Day 8:</strong> End-to-end AI automation with code generators, fraud detection, and domain-specific case studies.</li>
-  </ul>
-</div>
-                </div>
-                <div class="registration-form" id="register">
-                    <div class="payment-toggle">
-    <iframe
-      id="JotFormIFrame-251834769546471"
-      title="Registration Form"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/251834769546471"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251834769546471']", "https://form.jotform.com/")</script>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <script
-  src='https://cdn.jotfor.ms/agent/embedjs/0197c7372f4d712b83d98fcbcd24c6294aa6/embed.js?skipWelcome=1&maximizable=1'>
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://themes.getbootstrap.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='https://themes.getbootstrap.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.8.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.8.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='dokan-fontawesome-css'  href='https://themes.getbootstrap.com/wp-content/plugins/dokan-lite/assets/vendors/font-awesome/font-awesome.min.css?ver=2.9.27' type='text/css' media='all' />
+<link rel='stylesheet' id='dokan-theme-skin-css'  href='https://themes.getbootstrap.com/wp-content/themes/dokan/assets/css/skins/purple.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var dokan = {"ajaxurl":"https:\/\/themes.getbootstrap.com\/wp-admin\/admin-ajax.php","nonce":"503a227374","ajax_loader":"https:\/\/themes.getbootstrap.com\/wp-content\/plugins\/dokan-lite\/assets\/images\/ajax-loader.gif","seller":{"available":"Available","notAvailable":"Not Available"},"delete_confirm":"Are you sure?","wrong_message":"Something went wrong. Please try again.","vendor_percentage":"70","commission_type":"percentage","rounding_precision":"6","mon_decimal_point":".","product_types":["simple"],"rest":{"root":"https:\/\/themes.getbootstrap.com\/wp-json\/","nonce":"8665bd25f2","version":"dokan\/v1"},"api":null,"libs":[],"routeComponents":{"default":null},"routes":[],"urls":{"assetsUrl":"https:\/\/themes.getbootstrap.com\/wp-content\/plugins\/dokan-lite\/assets"}};
+/* ]]> */
 </script>
-    </footer>
+<script type='text/javascript' src='https://themes.getbootstrap.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://themes.getbootstrap.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://themes.getbootstrap.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themes.getbootstrap.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://themes.getbootstrap.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://themes.getbootstrap.com/?p=126' />
+<link rel="alternate" type="application/json+oembed" href="https://themes.getbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.getbootstrap.com%2Fpreview%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://themes.getbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.getbootstrap.com%2Fpreview%2F&#038;format=xml" />
+<style>.woocommerce-password-strength.short {color: #e2401c}.woocommerce-password-strength.bad {color: #e2401c}.woocommerce-password-strength.good {color: #3d9cd2}.woocommerce-password-strength.strong {color: #0f834d}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>        <style type="text/css">
+                                                                                                                                                                                </style>
+          <!-- The filemtime is to append a timestamp for the last time the stylesheet was updated to automate cache busting from CloudFlare -->
+  <link rel='stylesheet' href='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/style.css?ver=1590611604' />
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67613229-3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-67613229-3');
+  </script>
 
-        // Payment toggle functionality
-        const toggleOptions = document.querySelectorAll('.toggle-option');
-        toggleOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                toggleOptions.forEach(opt => opt.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
+</head>
+  <body>
+    <style>html{margin-top:0 !important;}</style>
 
-        // Form submission handling
-        const registrationForm = document.getElementById('registrationForm');
-        registrationForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show loading state
-            const submitBtn = this.querySelector('.checkout-btn');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission (replace with actual service)
-            setTimeout(() => {
-                alert('Thank you for your interest! We will contact you shortly with payment details and program information.');
-                
-                // Reset form
-                registrationForm.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
+      <main class="main bg-dark">
+        <iframe class="iframe-preview" width="100%" src="https://yevgenysim-turkey.github.io/incline/"></iframe>
+    </main>
 
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    <nav class="navbar navbar-preview fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center w-100"><a class="my-lg-0 text-gray-soft" href="https://themes.getbootstrap.com/product/incline-landing-page-set/"><i class="bootstrap-themes-icon-left-open-1"></i> View theme <span class="d-none d-sm-inline">info</span></a>
+            <ul class="nav nav-preview d-none d-md-flex" role="tablist">
+                <li class="nav-item"><a class="nav-link btn-iframe-to-desktop-trigger active" data-toggle="tab" href="#home" role="tab"><i class="bootstrap-themes-icon-desktop nav-preview__icon"></i></a></li>
+                <li class="nav-item"><a class="nav-link nav-link--small btn-iframe-to-mobile-trigger" data-toggle="tab" href="#profile" role="tab"><i class="bootstrap-themes-icon-iphone nav-preview__icon nav-preview__icon--sm"></i></a></li>
+            </ul>            
+            <div class="form-inline">
+                <div class="btn-group d-none d-sm-flex">
+                  <a class="dropdown-toggle text-gray-soft" js-price-dropdown="true" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Standard License</a>
+                    <div class="dropdown-menu dropdown-menu--xl dropdown-menu--centered dropdown-menu--has-triangle">
+                    <button class="dropdown-block-item switch_price_prod" data-type="Standard License" data-price="49.00" data-price_label="$49.00" data-label="Standard License">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><span>Standard License</span><span class="d-flex align-items-center">$49.00</span></div>
+                        <ul class="fs-13 text-gray-soft mb-2">
+                            <li>Use for a single product</li>
+                            <li>Non-paying users only</li>
+                        </ul>
+                        <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullStandardLicense">Standard License</a></p>
+                    </button>
+                    <div class="dropdown-divider"></div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+                      <button class="dropdown-block-item switch_price_prod" data-type="Multisite License" data-price="149.00" data-price_label="$149.00" data-label="Multisite License">
+                          <div class="d-flex justify-content-between align-items-center mb-2"><span>Multisite License</span><span class="d-flex align-items-center">$149.00</span></div>
+                          <ul class="fs-13 text-gray-soft mb-2">
+                            <li>Use for a unlimited product</li>
+                            <li>Non-paying users only</li>
+                          </ul>
+                          <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullMultisiteLicense">Multisite License</a></p>
+                      </button>
 
-        // Observe cards for animation
-        document.querySelectorAll('.feature-card, .case-study-card, .testimonial-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'all 0.6s ease';
-            observer.observe(card);
-        });
+                                            <div class="dropdown-divider"></div>
+                        <button class="dropdown-block-item switch_price_prod" data-type="Extended License" data-price="490.00" data-price_label="$490.00" data-label="Extended License">
+                            <div class="d-flex justify-content-between align-items-center mb-2"><span>Extended License</span><span class="d-flex align-items-center">$490.00</span></div>
+                            <ul class="fs-13 text-gray-soft mb-2">
+                              <li>Use for a single product</li>
+                              <li>Paying users allowed</li>
+                            </ul>
+                            <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullExtendedLicense">Extended License</a></p>
+                        </button>
+                                    </div> 
+                </div>
+                <form action="https://themes.getbootstrap.com/cart/" method="POST" class=" btn-block inline-block">
+                    <input type="hidden" js-license-type="license_type" name="license_type" value="Standard License" />
+                    <input type="hidden" name="add-to-cart" value="3569" />
+                    <button type="submit" class="btn btn-brand btn-block btn-checkout"><span class="btn-text">Add to cart <span class="btn__label btn__label--right" js-price-value="main_price_div">$<b id="price_val">49.00</b></span></span></button>
+                </form>
+                <a class="text-gray ml-3" href="https://yevgenysim-turkey.github.io/incline/">
+                  <small>
+                    <i class="bootstrap-themes-icon-close"></i>
+                  </small>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
 
-        // Counter animation for metrics
-        function animateCounter(element, target) {
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                element.textContent = Math.floor(current).toLocaleString();
-            }, 16);
-        }
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.min.js'></script>
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.bundle.min.js'></script>
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/tether.min.js'></script>
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/popper.min.js'></script>
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/bootstrap.min.js'></script>
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/lazysizes.min.js'></script>
 
-        // Animate counters when they come into view
-        const metricObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const value = entry.target.textContent;
-                    const numericValue = parseFloat(value.replace(/[^\d.]/g, ''));
-                    if (!isNaN(numericValue) && numericValue > 10) {
-                        animateCounter(entry.target, numericValue);
-                    }
-                    metricObserver.unobserve(entry.target);
-                }
-            });
-        });
+    <!-- The filemtime is to append a timestamp for the last time the stylesheet was updated to automate cache busting from CloudFlare -->
+    <script src='https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/scripts.js?ver=1670173476'></script>
 
-        document.querySelectorAll('.metric-value').forEach(metric => {
-            metricObserver.observe(metric);
-        });
 
-        // Add subtle parallax effect
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero && scrolled < window.innerHeight) {
-                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-            }
-        });
 
-        // Dynamic pricing based on toggle
-        const priceDisplay = document.querySelector('.current-price');
-        const originalPrice = document.querySelector('.original-price');
-        
-        toggleOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                if (this.textContent === 'Pay by Weeks') {
-                    priceDisplay.textContent = 'AED 1,275';
-                    originalPrice.textContent = 'AED 1,500 /week';
-                } else {
-                    priceDisplay.textContent = 'AED 5,100';
-                    originalPrice.textContent = 'AED 6,000';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
