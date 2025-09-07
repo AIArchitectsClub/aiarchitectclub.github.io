@@ -276,7 +276,7 @@
         function downloadCertificate() {
             const link = document.createElement('a');
             link.href = certificateImgEl.src;
-            link.download = `${recipientNameEl.textContent.replace(/ /g, '_')}_Certificate.png`;
+            link.download = `${recipientNameEl.textContent.replace(/ /g, '_')}.png`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
